@@ -1,0 +1,13 @@
+h1 {
+    max-width: 200px;
+    margin: 0 auto;
+    font-family: $font1;
+    font-weight: 100;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    align-self: flex-end;
+}

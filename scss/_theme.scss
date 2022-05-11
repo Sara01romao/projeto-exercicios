@@ -1,0 +1,21 @@
+$theme: dark;
+
+@mixin dark {
+    background-color: $background-dark;
+    color: $color-txt-dark;
+}
+
+@mixin light {
+    background-color: $background-light;
+    color: $color-txt-light;
+}
+
+@if $theme == dark {
+    body {
+        @include dark;
+    }
+} @else if $theme == light {
+    body {
+        @include light;
+    }
+}
