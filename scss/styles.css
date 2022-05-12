@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;400;700&display=swap");
 h1 {
   max-width: 200px;
-  margin: 0 auto;
+  margin: 25px auto 0;
   font-family: "Inter", sans-serif;
   font-weight: 100;
   font-style: italic;
@@ -19,14 +19,53 @@ span {
       align-self: flex-end;
 }
 
-.button {
-  width: 150px;
-  height: 30px;
-  background-color: #6C63FF;
-}
-
 body {
   background-color: #000;
   color: #fff;
+}
+
+.button {
+  width: 200px;
+  margin: 0 auto;
+  background-color: #6C63FF;
+  display: block;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.button:hover {
+  background-color: #52057B;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid red;
+  padding: 20px;
+  margin-top: 50px;
+  height: 60vh;
+}
+
+img {
+  width: 100%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */

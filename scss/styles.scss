@@ -1,6 +1,23 @@
 @import "fonts";
 @import "colors";
 @import "header";
-@import "button";
 @import "theme";
+@import "button";
 
+body{
+    font-family: $font2;
+}
+
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 20px;
+    margin-top: 50px;
+    height: 60vh;
+}
+
+img{
+    width: 100%;
+    margin: 0 auto;
+}
