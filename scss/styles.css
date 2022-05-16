@@ -108,7 +108,7 @@ body {
 }
 
 .modal {
-  background-color: #181818;
+  background-color: rgba(24, 24, 24, 0.5);
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -121,10 +121,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
 }
 
 .modal .content {
-  background-color: rgba(240, 248, 255, 0.103);
+  background-color: white;
   height: 300px;
   width: 300px;
   padding: 20px;
@@ -169,6 +170,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+}
+
+.modal.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body {

@@ -1,5 +1,5 @@
 .modal{
-    background-color: rgb(24, 24, 24);
+    background-color: rgba(24, 24, 24, 0.5);
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -8,8 +8,9 @@
     display: none;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     .content{
-        background-color: rgba(240, 248, 255, 0.103);
+        background-color: rgb(255, 255, 255);
         height: 300px;
         width: 300px;
         padding: 20px;
@@ -31,3 +32,6 @@
     }
 }
 
+.modal.open{
+    display: flex;
+}

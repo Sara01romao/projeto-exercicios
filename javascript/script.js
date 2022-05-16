@@ -1,3 +1,8 @@
+const openModal = document.getElementById('openModal');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.close');
+
+
 
 let timeExercice = 5;
 
@@ -18,3 +23,14 @@ let timeExercice = 5;
   }
 
 
+
+  //modal
+openModal.addEventListener('click', ()=>{
+    modal.classList.add('open');
+
+})
+
+closeModal.addEventListener('click', ()=>{
+  modal.classList.remove('open');
+
+})
