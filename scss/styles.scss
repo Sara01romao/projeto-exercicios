@@ -4,6 +4,7 @@
 @import "header";
 @import "theme";
 @import "button";
+@import "modal";
 
 body{
     font-family: $font2;
@@ -21,4 +22,8 @@ body{
 img{
     width: 100%;
     margin: 0 auto;
+}
+
+main{
+    @include flexColumn;
 }

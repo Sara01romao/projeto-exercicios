@@ -5,4 +5,13 @@ $color-txt-dark:#fff;
 $color-txt-light:#000;
 
 $color-btn: #6C63FF;
-$color-btn-hover:#52057B;
+$color-btn-hover:#5951fd;
+
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
