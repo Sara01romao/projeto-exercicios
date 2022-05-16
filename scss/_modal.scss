@@ -1,0 +1,33 @@
+.modal{
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    .content{
+        background-color: rgba(240, 248, 255, 0.103);
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+        position: relative;
+        border-radius: 10px;
+        @include flexColumn;
+        button{
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+        .modalInput{
+            margin-top: 50px;
+            @include flexColumn;
+            gap: 10px;
+        }
+    }
+}
+
