@@ -1,6 +1,8 @@
 const openModal = document.getElementById('openModal');
 const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.close');
+const btnAdd =document.querySelector('#add');
+const exercise = document.querySelector("#exercise");
 
 
 
@@ -33,4 +35,16 @@ openModal.addEventListener('click', ()=>{
 closeModal.addEventListener('click', ()=>{
   modal.classList.remove('open');
 
+})
+
+
+
+
+
+
+add.addEventListener('click', ()=>{
+ 
+ localStorage.setItem('exercises',exercise.value );
+  
+  
 })
