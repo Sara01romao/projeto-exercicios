@@ -146,7 +146,7 @@ body {
           align-items: center;
 }
 
-.modal .content button {
+.modal .content .close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -154,7 +154,29 @@ body {
   cursor: pointer;
 }
 
-.modal .content .modalInput {
+.modal.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modalElements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalElements .modalInput {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,10 +194,8 @@ body {
   gap: 10px;
 }
 
-.modal.open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.modalElements .modalInput input {
+  height: 20px;
 }
 
 body {
