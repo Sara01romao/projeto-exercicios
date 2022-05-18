@@ -17,21 +17,30 @@
         position: relative;
         border-radius: 10px;
         @include flexColumn;
-        button{
+        .close{
           position: absolute;
           top: 20px;
           right: 20px;
           font-size: 1rem;
           cursor: pointer;
         }
-        .modalInput{
-            margin-top: 50px;
-            @include flexColumn;
-            gap: 10px;
-        }
+       
     }
 }
 
 .modal.open{
     display: flex;
+}
+
+.modalElements{
+    @include flexColumn;
+
+    .modalInput{
+        margin-top: 50px;
+        @include flexColumn;
+        gap: 10px;
+        input{
+            height: 20px;
+        }
+    }
 }
