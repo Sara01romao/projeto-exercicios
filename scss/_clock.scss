@@ -1,0 +1,36 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid red;
+    transition: 30s;
+   
+
+    img{
+        display: block;
+        
+    };
+
+    img.active{
+        
+        animation: animeRotate 30s forwards;
+    };
+
+    h2{
+        position: absolute;
+        top: 90px;
+       
+    }
+}
+
+
+@keyframes animeRotate {
+    from{
+      transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
