@@ -1,0 +1,20 @@
+
+.listContainer{
+    border: 1px solid red;
+    width: 80%;
+    padding: 20px 10px 5px;
+
+}
+.listHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 5px;
+    border-bottom: 2px solid rgb(216, 216, 216);
+    
+
+}
+
+.listContainer ul{
+    padding: 10px;
+}
