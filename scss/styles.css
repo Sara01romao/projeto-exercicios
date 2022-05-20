@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@100;400&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,7 +56,7 @@ table {
 h1 {
   max-width: 200px;
   margin: 25px auto 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: 100;
   font-style: italic;
   display: -webkit-box;
@@ -254,6 +254,7 @@ body {
   border: 1px solid red;
   width: 80%;
   padding: 20px 10px 5px;
+  margin-top: 50px;
 }
 
 .listHead {
@@ -272,6 +273,35 @@ body {
 
 .listContainer ul {
   padding: 10px;
+  height: 100px;
+  overflow-y: auto;
+  /* Handle */
+}
+
+.listContainer ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+.listContainer ul::-webkit-scrollbar-thumb {
+  background: #b5b1fc;
+}
+
+.listContainer ul::-webkit-scrollbar-track {
+  background: #dbdbdb;
+}
+
+.listContainer ul li {
+  border: 1px solid red;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body {
@@ -284,7 +314,6 @@ body {
   border: 1px solid red;
   padding: 20px;
   margin-top: 50px;
-  height: 60vh;
 }
 
 img {

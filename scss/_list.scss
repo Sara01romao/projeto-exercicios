@@ -3,6 +3,7 @@
     border: 1px solid red;
     width: 80%;
     padding: 20px 10px 5px;
+    margin-top: 50px;
 
 }
 .listHead{
@@ -17,4 +18,28 @@
 
 .listContainer ul{
     padding: 10px;
+    height: 100px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 7px;
+    }   
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+     background: #b5b1fc;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: #dbdbdb; 
+      }
+  
+   
+}
+
+
+.listContainer ul li{
+    border: 1px solid red;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
