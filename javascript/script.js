@@ -43,8 +43,15 @@ closeModal.addEventListener('click', ()=>{
 
 
 add.addEventListener('click', ()=>{
- 
- localStorage.setItem('exercises',exercise.value );
+
+     let arr =[];
+     arr.push(exercise.value)
+     localStorage.setItem('exercises', JSON.stringify(arr))
   
+    const itens = JSON.parse(localStorage.getItem('exercises'))
+    console.log(itens)
+
+  
+    
   
 })
