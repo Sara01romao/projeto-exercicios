@@ -3,6 +3,7 @@ const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.close');
 const btnAdd =document.querySelector('#add');
 const exercise = document.querySelector("#exercise");
+const list = document.querySelector('.list')
 
 
 
@@ -40,23 +41,31 @@ closeModal.addEventListener('click', ()=>{
 
 
 
+let arr =[];
+let itens = JSON.parse(localStorage.getItem('exercises'));
+if(!itens){
+  list.innerHTML=`<li>Add exercícios</li>`
+}else{
+  
+  list.innerHTML=`${itens.map(e => `<li>${e} <button>X</button></li>`).join('')} `
+}
 
 
 add.addEventListener('click', ()=>{
 
-     let arr =[];
-     let itens = JSON.parse(localStorage.getItem('exercises'));
+    
      if(!itens){
        arr.push(exercise.value) 
        localStorage.setItem('exercises', JSON.stringify(arr)) 
+       console.log("Arr", arr)
+       list.innerHTML=`${arr.map(e => `<li>${e} <button>X</button></li>`)} `
       
      }else{
-       itens.push(exercise.value)
+      itens.push(exercise.value)
       localStorage.setItem('exercises', JSON.stringify(itens))
-     }
+      console.log("itens", itens)
       
-     
-
-    
+      list.innerHTML=`${itens.map(e => `<li>${e} <button>X</button></li>`).join('')} `
+     }
   
 })
