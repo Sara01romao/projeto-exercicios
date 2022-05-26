@@ -58,7 +58,7 @@ add.addEventListener('click', ()=>{
        arr.push(exercise.value) 
        localStorage.setItem('exercises', JSON.stringify(arr)) 
        console.log("Arr", arr)
-       list.innerHTML=`${arr.map(e => `<li>${e} <button>X</button></li>`)} `
+       list.innerHTML=`${arr.map(e => `<li>${e} <button>X</button></li>`).join('')} `
       
      }else{
       itens.push(exercise.value)
