@@ -226,6 +226,12 @@ body {
 .clock h2 {
   position: absolute;
   top: 90px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+}
+
+.clock h2 span {
+  font-size: 1.5rem;
 }
 
 @-webkit-keyframes animeRotate {
@@ -296,6 +302,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
+  padding: 0px 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
